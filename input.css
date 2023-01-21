@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.heading {
+    @apply
+
+    text-center
+    py-5
+    text-2xl
+    text-white
+    font-inter
+    font-semibold
+    bg-blue-400
+}
+
+.flex-container {
+    @apply
+
+    flex
+    flex-row
+    mx-auto
+    w-11/12
+    pb-20
+    pt-10
+    px-2
+    space-x-6
+    justify-center
+}
+
+.contain.active {
+    @apply
+ 
+    bg-cover bg-center rounded-3xl
+    w-8/12
+    md:w-7/12
+    pt-24
+    transition ease-in duration-700
+}
+
+.contain.active h1 {
+    @apply
+
+    opacity-100
+    transition
+    ease-in-out
+    duration-500
+}
+
+.contain {
+    @apply
+
+    bg-cover
+    cursor-pointer
+    bg-center
+    rounded-full
+    w-10
+    md:w-20
+}
+
+.contain h1 {
+    @apply
+
+    opacity-0
+    pt-96 text-white text-2xl font-semibold font-inter px-2 pb-2
+}
